@@ -23,7 +23,6 @@ def question1(target):
 						if (item1+item2) == target:
 							result.append(baseList.index(item1))
 							result.append(baseList.index(item2))
-		print(result)
 		else:
 			raise Exception("Número inválido!")
 		return result
@@ -35,7 +34,7 @@ def question2(string):
 		baseList = [['(', ')'], ['[', ']'], ['{', '}']] 
 		length = len(string)
 
-		result = (length % 2) == 0
+		result = (length % 2) == 0 #se o número não for par, obviamente que a sequencia é inválida
 
 		if result:
 			x = int(length/2)
